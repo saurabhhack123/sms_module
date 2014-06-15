@@ -1,0 +1,105 @@
+/**
+ Css on Html tags
+*/
+
+h2 {font-family: 'Margarine'}
+h6 {font-family: 'Kameron'}
+a,label,span,button,select,textarea{font-family: 'Kameron', serif;font-size: 1.1em}
+pre{height: 88px;}
+li{border-right: 1px solid #ddd;}
+textarea{width: 360px;height:95px;border:1px solid #2A88D1;border-left: 4px solid #2A88D1;padding: 1px;padding: 3px 1px 0px 3px;}
+
+/**
+ Css on Id's
+*/
+
+#hidden_help,#hidden_tmpl{ background-color: rgba(0, 0, 0, 0.39);position: fixed;height: 100%;width: 100%;top: 0;left: 0;visibility: hidden;}
+#help-message, #msg-tmpl{height: 406px;width: 600px;background-color: white;border-radius: 8px;padding: 20px;font-size: 20px;margin: 198px auto;}
+#help-message{margin: 184px auto;}
+#msg-tmpl{height:285px; overflow-y:scroll;margin: 173px auto;}
+
+/**
+ Css on Classes
+*/
+
+.head_msg{background-color:#2A88D1;height:17%;box-shadow: 0px 5px 2px #6BBEFF;color: #FFFDFD;font-family: serif;text-align: center;}
+.menu{font-family: 'Margarine';  color: #FFFDFD; font-family: serif;text-align: center;background-color:#3276b1;margin-top: 5px;}
+.menu div {padding: 15px;border-right: 1px solid #ddd;height: 42px;font-size: 16px;text-shadow: -1px 1px 8px #fff;}
+.menu div:active{font-size: 10px;-webkit-transition: all 0.005s ease;}
+.menu div:hover{cursor: pointer;}
+.schl-box{height:660px;background-color: #f7f7f9;border: 1px solid #e1e1e8;}
+.navbar-inner{padding-left: 10em;}
+.act-box{height: 640px;background-color: #f7f7f9;border: 1px solid #E5E5EB;margin: 0px 14px 14px 14px;border-radius: 1.2em;box-shadow: 2px 3px 11px 2px #6CC2CE;}
+.cg-fix{padding-left: 40em;margin-top: 2em;background-color: #fff;color: #407F8F;padding-top: 1em;padding-bottom: 1em;}
+.fix-cls-head{height: 64px;padding-left: 29em;margin-top: 2em;background-color: #fff;color: #407F8F;padding-top: 2em;}
+.fix-cls-head #msg-typ{margin-right: 6em;}
+.fix-cls-head .btn-hlp{padding-left: 8em;}
+.fix-sec-head, .fix-tcr-head{height: 64px;padding-left: 10em;margin-top: 2em;background-color: #fff;color: #407F8F;padding-top: 2em;}
+.fix-sec-head #msg-typ, .fix-tcr-head #msg-typ{margin-right: 6em;}
+.fix-sec-head #class, .fix-tcr-head #class{margin-right: 6em;}
+.fix-sec-head .btn-hlp{padding-left: 10em;}
+.fix-tcr-head #section{margin-right: 6em;}
+.fix-tcr-head .btn-hlp{padding-left: 1em;}
+.fix-stu-head{height: 64px;padding-left: 8em;margin-top: 2em;background-color: #fff;color: #407F8F;padding-top: 2em;}
+.fix-stu-head #msg-typ{margin-right: 5em;}
+.fix-stu-head #class{margin-right: 5em;}
+.fix-stu-head #section{margin-right: 5em;}
+.fix-stu-head .btn-hlp{padding-left: 2em;}
+.chk-cg-fix{margin-top: 2em;background-color: #fff;color: #407F8F;padding-top: 1em;padding-bottom: 2em;padding-left: 6em;}
+.chk-cg-fix-cls{padding-left: 1em;}
+.btn-sms{margin-left: 42em;margin-top: 3em;}
+.char-disp input{width: 20px;margin-left: 1em;border-radius: 0.9em;border: 1px solid #c0c0c0;margin-right: 1em; font-size: 10px;}
+.char-disp .sms-no{font-size: 0.9em;font-family: -webkit-body;}
+.sms-no input{width: 20px;margin-left: 1em;border-radius: 0.9em;border: 1px solid #c0c0c0;margin-right: 1em; font-size: 10px;}
+.btn-hlp{padding-left: 12em;}
+.btn-hlp button {padding: 5px;}
+.text-success .text-info {font-size: 9px; }
+.templates tbody tr td{font-size: 13px;}
+.templates tbody td:hover {cursor: pointer; background-color: #A0C4EB !important; box-shadow: 1px 1px 10px 2px #2ADDC0;};
+.checkbox{width: 176px !important;}
+.alert {margin-top: 2em;padding-top: 2em;font: initial;text-align: center;height: 4em;}
+
+.head_msg img:hover{
+	-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	
+	transform:         rotate(-30deg);
+    -o-transform:      rotate(-30deg);
+   	-webkit-transform: rotate(-30deg);
+	-moz-transform:    rotate(-30deg);
+	cursor: pointer;
+}
+.bottom_shadow{
+	border: 1px solid #ddd;
+	background-color: #DFDFDF;
+	border-radius: 100%;
+	height: 2px;
+	margin: 2px auto 14px auto;
+	width: 281px;
+	overflow:hidden;
+    -webkit-animation: type 2s steps(50, end);
+    animation: type 2s steps(50, end);
+}
+
+/**
+  Webkit animation
+*/
+
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+
+
+
+
+
+
+
