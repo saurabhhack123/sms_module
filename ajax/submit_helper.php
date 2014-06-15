@@ -8,11 +8,10 @@
 
   $msg       = $_REQUEST['action'];
   $school_id = $schoolid;
-  echo "helo";
 
   if($msg == "sms_all"){
-  	
-  	$msg_typ     = $_REQUEST["msg_typ"];
+    
+    $msg_typ     = $_REQUEST["msg_typ"];
     $msg         = $_REQUEST["msg"];
     $all_teacher = $_REQUEST["all_teacher"];
     $admin       = $_REQUEST["admin"];
@@ -21,9 +20,12 @@
    
     $sms_students    = new SmsStudents($school_id);
     $student_details = $sms_students->get_students();
-    // print_r($student_details);
     $staff_details   = $sms_students->staff_details();
-    // print_r($staff_details);
+ 
+    // $sms_students->send_sms_all($student_details,$msg);
+    $sms_students->send_sms_to_staff($msg,$staff_details,$all_teacher,$admin,$pricipal,$corres);
+
+    
     
 
   }
