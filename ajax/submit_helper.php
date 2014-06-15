@@ -22,11 +22,10 @@
     $student_details = $sms_students->get_students();
     $staff_details   = $sms_students->staff_details();
  
-    // $sms_students->send_sms_all($student_details,$msg);
+    $sms_students->send_sms_all($student_details,$msg);
     $sms_students->send_sms_to_staff($msg,$staff_details,$all_teacher,$admin,$pricipal,$corres);
-
     
-    
+        
 
   }
 

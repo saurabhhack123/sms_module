@@ -27,7 +27,7 @@
 
 	<div class="row-fluid head_msg">
 	    		<div class="span12">			
-	    			 <h2><img src="img/sms.png" width="50px" height="50px"> Interface</h2>
+	    			 <h2><img src="img/sms.png" width="50px" height="50px" id="sms-img"> Interface</h2>
 	    			 <div class='bottom_shadow'></div>
 	    		</div>
 	</div>
@@ -126,7 +126,8 @@ $message_type_map = $sms_module->message_type;
                    include_once("layouts/68/bottom_layout.php");
 		      ?>
 		      <div class="controls btn-sms">
-                         <button class="btn btn-primary" type="button" id="sms-all">Send Sms to All Students</button>
+                         <button class="btn btn-primary" type="button" id="sms-all" data-loading-text="sending sms to students....." data-role="button" >Send Sms to All Students</button>
+
 		      </div>
        </div>  
     </div> 
