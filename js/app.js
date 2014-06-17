@@ -9,6 +9,7 @@ $(document).ready(function(){
             var template = $(this).text();
             $("#message").text(template);
             $("#hidden_tmpl").css("visibility","hidden");
+            
         });
 
 	  	if(this.id === "help-message" || this.id === "msg-tmpl"){	        
@@ -16,8 +17,10 @@ $(document).ready(function(){
 	     }
 
 	    if(this.id === "hidden_help" || this.id === "hidden_tmpl"){	        
-	        $("#hidden_help").css("visibility","hidden");
+          $("#hidden_help").css("visibility","hidden");
 	        $("#hidden_tmpl").css("visibility","hidden");
+
+         
 	    }
 	   });
 

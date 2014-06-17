@@ -15,6 +15,8 @@
 			<link href='http://fonts.googleapis.com/css?family=Life+Savers|Margarine|Sacramento|Fenix' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Kameron' rel='stylesheet' type='text/css'>
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+		
 			<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.js"></script>
 			<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
 			<script type="text/javascript" src="js/app.js"></script>
@@ -111,7 +113,7 @@ $message_type_map = $sms_module->message_type;
 						 </div>
 					     <div class="span3">
 						     <label class="checkbox">
-							        <input type="checkbox" id="pricipal"> Send SMS to Principal
+							        <input type="checkbox" id="principal"> Send SMS to Principal
 						     </label>
 						 </div>
 						 <div class="span3">
@@ -126,8 +128,8 @@ $message_type_map = $sms_module->message_type;
                    include_once("layouts/68/bottom_layout.php");
 		      ?>
 		      <div class="controls btn-sms">
-                         <button class="btn btn-primary" type="button" id="sms-all" data-loading-text="sending sms to students....." data-role="button" >Send Sms to All Students</button>
-
+                         <button class="btn btn-primary" type="button" id="sms-all" data-loading-text="sending sms to school students....." data-role="button" >Send Sms to All Students</button>
+                         
 		      </div>
        </div>  
     </div> 

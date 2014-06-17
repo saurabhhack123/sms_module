@@ -18,6 +18,7 @@
 			<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.js"></script>
 			<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
 			<script type="text/javascript" src="js/app.js"></script>
+			<script type="text/javascript" src="controller/sms-all.js"></script>
 			
  </head>
 
@@ -26,7 +27,7 @@
 
 	<div class="row-fluid head_msg">
 	    		<div class="span12">			
-	    			 <h2><img src="img/sms.png" width="50px" height="50px"> Interface</h2>
+	    			 <h2><img src="img/sms.png" width="50px" height="50px" id="sms-img"> Interface</h2>
 	    			 <div class='bottom_shadow'></div>
 	    		</div>
 	</div>
@@ -120,32 +121,32 @@ $classes          = $sms_students->get_classes();
   		       <div class="control-group chk-cg-fix chk-cg-fix-cls">
 				     <div class="span3">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to Teacher Incharge
+						        <input type="checkbox" id="tch-incharge"> Send SMS to Teacher Incharge
 					     </label>
 				     </div>
 				     <div class="span2">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to School Admin
+						        <input type="checkbox" id="admin"> Send SMS to School Admin
 					     </label>
 					 </div>
 				     <div class="span2">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to Principal
+						        <input type="checkbox" id="principal"> Send SMS to Principal
 					     </label>
 					 </div>
 					 <div class="span3">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to Correspondent
+						        <input type="checkbox" id="corres"> Send SMS to Correspondent
 					     </label>
 				     </div>
  					 <div class="span2">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to ClassTeacher
+						        <input type="checkbox" id="cls-tch"> Send SMS to ClassTeacher
 					     </label>
 				     </div>
 		      </div>
 		      <div class="controls btn-sms">
-                         <button class="btn btn-primary" type="button">Send Sms to Selected Students</button>
+                         <button class="btn btn-primary" type="button" id="sms-student" data-loading-text="sending sms to student....." data-role="button">Send Sms to Selected Students</button>
 		      </div>
        </div>  
     </div> 

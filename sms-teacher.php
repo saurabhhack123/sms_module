@@ -17,6 +17,7 @@
 			<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.js"></script>
 			<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
 			<script type="text/javascript" src="js/app.js"></script>
+		    <script type="text/javascript" src="controller/sms-all.js"></script>
 			
  </head>
 
@@ -25,7 +26,7 @@
 
 	<div class="row-fluid head_msg">
 	    		<div class="span12">			
-	    			 <h2><img src="img/sms.png" width="50px" height="50px"> Interface</h2>
+	    			 <h2><img src="img/sms.png" width="50px" height="50px" id="sms-img"> Interface</h2>
 	    			 <div class='bottom_shadow'></div>
 	    		</div>
 	</div>
@@ -121,23 +122,23 @@ $classes          = $sms_model_section->get_classes();
   		      <div class="control-group chk-cg-fix chk-cg-fix-cls">
 				     <div class="span4">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to School Admin
+						        <input type="checkbox" id="admin"> Send SMS to School Admin
 					     </label>
 					 </div>
 				     <div class="span4">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to Principal
+						        <input type="checkbox" id="principal"> Send SMS to Principal
 					     </label>
 					 </div>
 					 <div class="span4">
 					     <label class="checkbox">
-						        <input type="checkbox"> Send SMS to Correspondent
+						        <input type="checkbox" id="corres"> Send SMS to Correspondent
 					     </label>
 				     </div>
 		      </div>
 		      
 		      <div class="controls btn-sms">
-                         <button class="btn btn-primary" type="button">Send Sms to Selected Teachers</button>
+                         <button class="btn btn-primary" type="button" id="sms-teacher" data-loading-text="sending sms to teacher....." data-role="button">Send Sms to Selected Teachers</button>
 		      </div>
        </div>  
     </div> 

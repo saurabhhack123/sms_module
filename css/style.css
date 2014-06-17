@@ -16,8 +16,8 @@ textarea{width: 360px;height:95px;border:1px solid #2A88D1;border-left: 4px soli
 #hidden_help,#hidden_tmpl{ background-color: rgba(0, 0, 0, 0.39);position: fixed;height: 100%;width: 100%;top: 0;left: 0;visibility: hidden;}
 #help-message, #msg-tmpl{height: 406px;width: 600px;background-color: white;border-radius: 8px;padding: 20px;font-size: 20px;margin: 198px auto;}
 #help-message{margin: 184px auto;}
-#msg-tmpl{height:285px; overflow-y:scroll;margin: 173px auto;}
-
+#msg-tmpl{height:285px; overflow-y:scroll;margin: 182px auto;}
+#loader{margin-left:1em;}
 /**
  Css on Classes
 */
@@ -57,7 +57,7 @@ textarea{width: 360px;height:95px;border:1px solid #2A88D1;border-left: 4px soli
 .templates tbody tr td{font-size: 13px;}
 .templates tbody td:hover {cursor: pointer; background-color: #A0C4EB !important; box-shadow: 1px 1px 10px 2px #2ADDC0;};
 .checkbox{width: 176px !important;}
-.alert {margin-top: 2em;padding-top: 2em;font: initial;text-align: center;height: 4em;}
+.alert {margin-top: 1em;padding-top: 1em;padding-bottom:1em;font: initial;text-align: center;height: 2em;font-style: italic;}
 
 .head_msg img:hover{
 	-transition: all 0.5s ease;
@@ -95,7 +95,6 @@ textarea{width: 360px;height:95px;border:1px solid #2A88D1;border-left: 4px soli
 @-webkit-keyframes type{
     from { width: 0; }
 }
-
 
 @-webkit-keyframes rotating {
     from{
